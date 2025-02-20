@@ -1,9 +1,11 @@
 import sys
-script,n,m = sys.argv
-print('Введите длину массива %n')
-%n = int(input()) #длина  массива
-print('Введите длину шага обхода %m')
-%m = int(input()) #длина шага обхода
+
+script, n, m = sys.argv
+
+n = int(sys.argv[1])  # Длина массива
+m = int(sys.argv[2])  #длина шага обхода
+
+
 current_List = m * [int(i) for i in range(1, n + 1)] #массив который получился по факту с 1
 step = [' '] #текущий шаг
 total_List = [] #все шаги
