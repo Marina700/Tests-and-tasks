@@ -1,11 +1,8 @@
 import json, sys
 script, values, tests, results = sys.argv
-print('Введите путь к файлу с данными')
-values=input()
-print('Введите путь к файлу с данными теста' )
-tests=input()
-print('Введите путь к файлу с результатами' )
-results=input()
+values=sys.argv[1]
+tests=sys.argv[2]
+results=sys.argv[3]
 with open(values, 'r', encoding='utf-8') as file:
     val = json.load(file)
 with open(tests, 'r', encoding='utf-8') as file:
