@@ -1,9 +1,7 @@
 import sys
 script,center_file,coordinates_file = sys.argv
-print('Введите путь к файлу с данными об окружности (x, y, R)')
-center_file=input()
-print('Введите путь к файлу с данными о точках (x, y)' )
-coordinates_file=input()
+center_file=sys.argv[1]
+coordinates_file=sys.argv[2]
 import math
 center = open(center_file, 'r', encoding = 'UTF-8')
 center_content = list(map(str.strip, center.readlines())) #список координат центра и радиус
