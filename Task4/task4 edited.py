@@ -1,7 +1,5 @@
 import sys
 script,massive_file = sys.argv
-print('Введите путь к файлу с данными о элементах массива')
-massive_file=input()
 massive = open(massive_file, 'r', encoding = 'utf-8')
 massive_list = list(map(str.strip, massive.readlines()))
 int_massive = [int(i) for i in massive_list]
